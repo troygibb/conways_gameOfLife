@@ -93,4 +93,4 @@ const moveMethods = [
 	getDownLeft 
 ];
 
-module.exports = { moveMethods }
+module.exports = { moveMethods };

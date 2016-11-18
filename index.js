@@ -19,7 +19,7 @@ if (process.env.npm_lifecycle_event === 'start') {
 let lineNum = 0;
 // Argument delcarations. 
 let n, w, h; 
-const board = []; 
+let board = []; 
 
 rl.on('line', (line) => {
   if (lineNum === 0) {
@@ -36,4 +36,7 @@ rl.on('line', (line) => {
 }).on('close', () => {
 	const result = processBoard(n, w, h, board);
 	process.stdout.write(result.map(row => row.join(' ')).join('\n'));
+	// Reset values depending on whether they are running in memory. 
+	lineNum = 0;
+	board = []; 
 });

@@ -82,4 +82,15 @@ const getDownLeft = (board, x, y) => {
 	return board[y1][x1] === '1';
 };
 
-module.exports = { getUp, getDown, getLeft, getRight, getUpRight, getUpLeft, getDownRight, getDownLeft}; 
+const moveMethods = [ 
+	getUp, 
+	getDown, 
+	getLeft, 
+	getRight, 
+	getUpRight, 
+	getUpLeft, 
+	getDownRight, 
+	getDownLeft 
+];
+
+module.exports = { moveMethods }

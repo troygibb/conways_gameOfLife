@@ -2,8 +2,8 @@ const readline = require('readline');
 const fs = require('fs');
 const processBoard = require('./processBoard').processBoard;
 
+// Declare readline interface. 
 let rl;
-
 if (process.env.npm_lifecycle_event === 'start') {
 	rl = readline.createInterface({
 	  input: process.stdin,

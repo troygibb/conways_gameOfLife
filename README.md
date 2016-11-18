@@ -6,7 +6,7 @@ Running Node v6.1.0.
 
 Make sure you are currently running Node v6.1.0. 
 
-To stat, run: 
+To start, run: 
 
 ```
 npm start

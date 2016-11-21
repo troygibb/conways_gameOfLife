@@ -26,9 +26,11 @@ const populateBoard = (boardMatrix) => {
 };
 
 const processBoard = (n, w, h, boardMatrix) => {
-	let result = boardMatrix;
+	let last = boardMatrix;
+	let result = '';
 	for (i = 0; i < n; i++) {
-		result = populateBoard(result);
+		last = populateBoard(last);
+		result += last.map(row => row.join(' ')).join('\n') + '\n\n';
 	}
 	return result;
 };

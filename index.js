@@ -1,3 +1,4 @@
+
 const readline = require('readline');
 const fs = require('fs');
 const processBoard = require('./processBoard').processBoard;
@@ -6,8 +7,7 @@ const processBoard = require('./processBoard').processBoard;
 let rl;
 if (process.env.npm_lifecycle_event === 'start') {
 	rl = readline.createInterface({
-	  input: process.stdin,
-	  output: process.stdout
+	  input: process.stdin
 	}); 
 } else if (process.env.npm_lifecycle_event === 'test') {
 	rl = readline.createInterface({
@@ -35,7 +35,7 @@ rl.on('line', (line) => {
   lineNum++;
 }).on('close', () => {
 	const result = processBoard(n, w, h, board);
-	process.stdout.write(result.map(row => row.join(' ')).join('\n'));
+	process.stdout.write(result);
 	// Reset values depending on whether they are running in memory. 
 	lineNum = 0;
 	board = []; 

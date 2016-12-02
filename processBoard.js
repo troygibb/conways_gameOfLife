@@ -8,7 +8,10 @@ const populateBoard = (boardMatrix) => {
 			const currentSquare = boardMatrix[y][x];
 			// Tally up the current square's neighbors values. 
 			const tally = moveMethods.reduce((prev, curr) => {
-				if (curr(referenceCopy, x, y)) {
+				const tuple = curr(referenceCopy, x, y);
+				const x1 = tuple[0];
+				const y1 = tuple[1];
+				if (referenceCopy[y1][x1] === '1') {
 					prev += 1; 
 				}
 				return prev; 

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/troygibb/conways_gameOfLife/issues"
   },
-  "homepage": "https://github.com/troygibb/conways_gameOfLife#readme"
+  "homepage": "https://github.com/troygibb/conways_gameOfLife#readme",
+  "dependencies": {
+    "split": "^1.0.0"
+  }
 }

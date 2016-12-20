@@ -1,0 +1,9 @@
+total 48
+-rw-r--r--  1 climbertroy  staff   274B Nov 18 14:59 README.md
+-rwx------  1 climbertroy  staff   1.0K Nov 21 12:50 index.js*
+-rw-r--r--  1 climbertroy  staff   1.5K Nov 18 14:58 moveMethods.js
+drwxr-xr-x  4 climbertroy  staff   136B Nov 21 12:23 node_modules/
+-rw-r--r--  1 climbertroy  staff   526B Nov 21 12:23 package.json
+-rw-r--r--  1 climbertroy  staff   1.0K Nov 21 12:54 processBoard.js
+-rw-r--r--  1 climbertroy  staff    56B Nov 21 12:53 sample.txt
+-rw-r--r--  1 climbertroy  staff     0B Nov 21 13:07 test.txt

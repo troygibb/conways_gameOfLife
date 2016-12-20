@@ -12,6 +12,8 @@ To start, run:
 npm start
 ```
 
+If you want to change the game's progression, go to server.js and fiddle with the 2d array of strings. 
+
 To test it out, in the CLI, enter: 
 
 ```
